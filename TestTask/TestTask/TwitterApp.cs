@@ -41,7 +41,7 @@ namespace TestTask
             running = true;
             using (twitterCtx = new TwitterContext(auth))
             {
-                var userInput = new UserInput();
+                var userInput = new UserInput("Введите Twitter логин:");
                 for (;;)
                 {
                     try
